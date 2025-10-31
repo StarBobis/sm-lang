@@ -1,8 +1,8 @@
 {
   "dcl_input": {
-    "description": "声明输入寄存器",
-    "details": "声明着色器输入参数，指定参数的语义和数据类型。",
-    "syntax": "dcl_input vN.xyzw",
+    "description": "Declares a shader-input register.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dcl-input",
+    "syntax": "dcl_input vN[.mask][, interpolationMode]",
     "example": "dcl_input v0.xyzw"
   },
   "dcl_output": {

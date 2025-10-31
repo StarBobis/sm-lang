@@ -10,3 +10,8 @@ I have no idea how vscode plugin works and start try this from 0, so i code this
 
 This plugin is still under development and test, It's not ready for use unless some day a release version is published.
 
+# Usage
+Basic usage offers a tip for function name to remind you what it is and offers a link directly to the documents.
+
+![alt text](image.png)
+
