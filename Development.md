@@ -49,7 +49,7 @@ https://github.com/YYadorigi/HLSL-Decompiler
 
 I think the DecompileHLSL.cpp in 3Dmigoto is not reliable in some case, will try to dump as bin and decompile it with YYadorigi's HLSL-Decompiler, so the question comes, can 3Dmigoto correctly translate SM5.1 HLSL to DXBC?
 
-I have seen SpectrumQT use d3dcompiler47.dll in WWMI project, is this means the old d3dcompiler46.dll is not enough in moredn UE5 fames?
+I have seen SpectrumQT use d3dcompiler47.dll in WWMI project, is this means the old d3dcompiler46.dll is not enough in moredn UE5 games?
 
 Or is that means 3Dmigoto is limited in these parts? I'm lazy to test.
 
