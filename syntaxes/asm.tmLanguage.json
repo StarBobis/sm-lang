@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "ASM",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#strings"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.asm",
+          "match": "\\b(if|while|for|return)\\b"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "support.function.directive.asm",
+          "match": "\\b(dcl_input|dcl_output|dcl_temps|imul)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.asm",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.asm",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.asm"
+}

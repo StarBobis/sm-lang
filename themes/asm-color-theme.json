@@ -1,0 +1,24 @@
+{
+  "name": "ASM Color Theme",
+  "tokenColors": [
+    {
+      "scope": "keyword.control.asm",
+      "settings": {
+        "foreground": "#FF79C6"  // 浅蓝色
+      }
+    },
+    {
+      "scope": "string.quoted.double.asm",
+      "settings": {
+        "foreground": "#CE9172"  // 字符串颜色（橙色）
+      }
+    },
+    {
+      "scope": "support.function.directive.asm",
+      "settings": {
+        "foreground": "#61AFEF",
+        "fontStyle": "bold"
+      }
+    }
+  ]
+}

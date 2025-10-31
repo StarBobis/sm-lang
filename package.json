@@ -1,0 +1,41 @@
+{
+  "name": "sm-lang",
+  "displayName": "sm lang",
+  "description": "DirectX Assembly Shader Model Language Support.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "asm",
+      "aliases": ["ASM", "asm"],
+      "extensions": [".asm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "asm",
+      "scopeName": "source.asm",
+      "path": "./syntaxes/asm.tmLanguage.json"
+    }],
+    "themes": [
+      {
+        "label": "ASM Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/asm-color-theme.json"
+      }
+    ]
+  },
+    "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "echo 'No compilation needed'",
+    "watch": "echo 'No watch needed'"
+  },
+   "devDependencies": {
+    "@vscode/vsce": "^2.22.0"
+  },
+   "main": "./src/extension.js"
+}
