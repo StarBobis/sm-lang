@@ -17,7 +17,7 @@
       "patterns": [
         {
           "name": "keyword.control.asm",
-          "match": "\\b(if|while|for|return)\\b"
+          "match": "\\b(if|else|while|for|return|ret)\\b"
         }
       ]
     },
@@ -25,7 +25,7 @@
       "patterns": [
         {
           "name": "support.function.directive.asm",
-          "match": "\\b(dcl_input|dcl_output|dcl_temps|imul|dcl_resource_buffer)\\b"
+          "match": "\\b(dcl_input|dcl_output|dcl_temps|imul|dcl_resource_buffer|ld|mul|mad|mov|imad|dp2|dp3|dp4)\\b"
         }
       ]
     },

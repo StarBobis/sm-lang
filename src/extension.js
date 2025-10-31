@@ -40,7 +40,7 @@ function updateSyntaxFile(functionNames) {
             "keywords": {
                 "patterns": [{
                     "name": "keyword.control.asm",
-                    "match": "\\b(if|while|for|return)\\b"
+                    "match": "\\b(if|else|while|for|return|ret)\\b"
                 }]
             },
             "functions": {

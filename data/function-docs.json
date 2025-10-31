@@ -3,30 +3,78 @@
     "description": "Declares a shader-input register.",
     "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dcl-input",
     "syntax": "dcl_input vN[.mask][, interpolationMode]",
-    "example": "dcl_input v0.xyzw"
+    "example": "dcl_input v3.xyz\ndcl_input v0.x, linearCentroid"
   },
   "dcl_output": {
-    "description": "声明输出寄存器", 
-    "details": "声明着色器输出参数，用于将结果传递给下一阶段。",
-    "syntax": "dcl_output oN.xyzw",
-    "example": "dcl_output o0.xyzw"
+    "description": "Declares a shader-output register.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dcl-output",
+    "syntax": "dcl_output oN[.mask]",
+    "example": "dcl_output o0.xyz\ndcl_output o1\ndcl_output o2.xw"
   },
   "dcl_temps": {
-    "description": "声明临时寄存器",
-    "details": "声明临时寄存器用于中间计算。",
+    "description": "Declares temporary registers.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dcl-temps",
     "syntax": "dcl_temps N",
-    "example": "dcl_temps 8"
+    "example": "dcl_temps 10; // Declare r0-r9"
   },
   "imul": {
-    "description": "123",
-    "details": "123",
-    "syntax": "",
+    "description": "Signed integer multiply.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/imul--sm4---asm-",
+    "syntax": "imul destHI[.mask], destLO[.mask], [-]src0[.swizzle], [-]src1[.swizzle]",
     "example": ""
   },
   "dcl_resource_buffer": {
-    "description": "22",
-    "details": "123",
+    "description": "Undocumented function similar like dcl_resource",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dcl-resource",
     "syntax": "",
+    "example": ""
+  },
+  "ld": {
+    "description": "Fetches data from the specified buffer or texture without any filtering (e.g. point sampling) using the provided integer address. The source data may come from any resource type, other than TextureCube.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/ld--sm4---asm-",
+    "syntax": "ld[_aoffimmi(u,v,w)] dest[.mask], srcAddress[.swizzle], srcResource[.swizzle]",
+    "example": ""
+  },
+  "mul": {
+    "description": "Component-wise multiply.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/mul--sm4---asm-",
+    "syntax": "mul[_sat] dest[.mask], [-]src0[_abs][.swizzle], [-]src1[_abs][.swizzle]",
+    "example": ""
+  },
+  "mad": {
+    "description": "Component-wise multiply & add.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/mad--sm4---asm-",
+    "syntax": "mad[_sat] dest[.mask], [-]src0[_abs][.swizzle], [-]src1[_abs][.swizzle], [-]src2[_abs][.swizzle]",
+    "example": ""
+  },
+  "mov": {
+    "description": "Component-wise move.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/mov--sm4---asm-",
+    "syntax": "mov[_sat] dest[.mask], [-]src0[_abs][.swizzle]",
+    "example": ""
+  },
+  "imad": {
+    "description": "Signed integer multiply and add.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/imad--sm4---asm-",
+    "syntax": "imad dest[.mask], [-]src0[.swizzle], [-]src1[.swizzle], [-]src2[.swizzle]",
+    "example": ""
+  },
+  "dp2": {
+    "description": "2-dimensional vector dot-product of components rg, POS-swizzle.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dp2--sm4---asm-",
+    "syntax": "dp2[_sat] dest[.mask], [-]src0[_abs][.swizzle], [-]src1[_abs][.swizzle]",
+    "example": ""
+  },
+  "dp3": {
+    "description": "3-dimensional vector dot-product of components rgb, POS-swizzle.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dp3--sm4---asm-",
+    "syntax": "dp3[_sat] dest[.mask], [-]src0[_abs][.swizzle], [-]src1[_abs][.swizzle],",
+    "example": ""
+  },
+  "dp4": {
+    "description": "4-dimensional vector dot-product of components rgba, POS-swizzle.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dp4--sm4---asm-",
+    "syntax": "dp4[_sat] dest[.mask], [-]src0[_abs][.swizzle], [-]src1[_abs][.swizzle],",
     "example": ""
   }
 }
