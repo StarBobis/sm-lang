@@ -76,5 +76,12 @@
     "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dp4--sm4---asm-",
     "syntax": "dp4[_sat] dest[.mask], [-]src0[_abs][.swizzle], [-]src1[_abs][.swizzle],",
     "example": ""
+  },
+  "dcl_output_siv": {
+    "description": "Declares an output register that contains a system-value parameter.",
+    "details": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dcl-output-siv",
+    "syntax": "dcl_output_siv oN[.mask], systemValueName",
+    "example": ""
   }
+
 }
