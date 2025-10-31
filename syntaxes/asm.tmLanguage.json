@@ -25,7 +25,7 @@
       "patterns": [
         {
           "name": "support.function.directive.asm",
-          "match": "\\b(dcl_input|dcl_output|dcl_temps|imul)\\b"
+          "match": "\\b(dcl_input|dcl_output|dcl_temps|imul|dcl_resource_buffer)\\b"
         }
       ]
     },

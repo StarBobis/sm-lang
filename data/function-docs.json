@@ -22,5 +22,11 @@
     "details": "123",
     "syntax": "",
     "example": ""
+  },
+  "dcl_resource_buffer": {
+    "description": "22",
+    "details": "123",
+    "syntax": "",
+    "example": ""
   }
 }
